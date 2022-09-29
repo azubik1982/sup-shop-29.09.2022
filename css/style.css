@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6, p{
     margin: 0 auto;
 }
 
+/* header start */
 .header{
     background-image: url(../images/header-bg.jpg);
     background-size: cover;
@@ -33,6 +34,7 @@ h1, h2, h3, h4, h5, h6, p{
     min-height: 100vh;
     background-position: center;
     position: relative;
+    margin-bottom: 80px;
 }
 
 .header::before{
@@ -132,7 +134,6 @@ h1, h2, h3, h4, h5, h6, p{
     color: #0093A1;
 }
 
-
 .header__decor-text--one,
 .header__decor-text--two{
     font-family: 'Comfortaa', cursive;
@@ -141,16 +142,19 @@ h1, h2, h3, h4, h5, h6, p{
     line-height: 145px;
     opacity: 0.3;
 }
+
 .header__decor-text--one{
     z-index: 1;
     right: 145px;
     bottom: 120px;
 }
+
 .header__decor-text--two{
     z-index: 4;
     left: 265px;
     bottom: 0;
 }
+
 .header__decor-text--three{
     max-width: 360px;
     right: 145px;
@@ -162,3 +166,70 @@ h1, h2, h3, h4, h5, h6, p{
     line-height: 39px;
     text-align: center;
 }
+/* header end */
+
+/* info-section start */
+.info{
+    background-image: url(../images/info-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.info::before{
+    content: "";
+    position: absolute;
+    background-color: #262C27;
+    height: 180px;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-120px);
+    z-index: 1;
+}
+
+.info__top{
+    display: flex;
+    gap: 80px;
+    padding-top: 100px;
+}
+
+.info__top-text{
+    padding-top: 245px;
+    width: 290px;
+    color: #fff;
+    position: relative;
+}
+
+.info__top-text--one{
+    padding-bottom: 125px;
+}
+
+.info__top-text--two{
+    border-bottom: 1px solid #fff;
+}
+
+.info__top-img{
+    position: relative;
+    z-index: 6;
+}
+
+.popup-btn{
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.popup-btn p{
+    padding-top: 12px;
+    display: block;
+    color: #fff;
+}
+
+.info__btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* info-section end */
