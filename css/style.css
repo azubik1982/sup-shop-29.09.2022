@@ -19,6 +19,11 @@ a{
 h1, h2, h3, h4, h5, h6, p{
     margin: 0;
 }
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 .container{
     max-width: 1230px; /*container size + 2*inner-padding */
@@ -176,6 +181,7 @@ h1, h2, h3, h4, h5, h6, p{
     background-position: center;
     position: relative;
 }
+
 .info::before{
     content: "";
     position: absolute;
@@ -192,6 +198,7 @@ h1, h2, h3, h4, h5, h6, p{
     display: flex;
     gap: 80px;
     padding-top: 100px;
+    margin-bottom: 65vh;
 }
 
 .info__top-text{
@@ -231,5 +238,39 @@ h1, h2, h3, h4, h5, h6, p{
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.info__specs{
+    display: flex;
+    align-items: center;
+    gap: 130px;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.info__specs-title{
+    text-transform: uppercase;
+    font-family: 'Comfortaa', cursive;
+    font-size: 60px;
+    line-height: 67px;
+    width: 250px;
+}
+
+.info__specs-list{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 30px 0;
+    width: 565px;
+    font-weight: 700;
+}
+
+.info__specs-item{
+    margin-bottom: 15px;
+    display: flex;
+    gap: 25px;
+}
+
+.info__specs-caption{
+    width: 185px;
 }
 /* info-section end */
